@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'CuSO4·5H2O - Only Null'
+title: 'CuSO4·5H2O - Only'
 description: ''
 keyword: 'learn share'
 url: '' # your host
@@ -24,10 +24,10 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: 'Only Null'
+author: 'Only'
 nickname: ''
 bio: 'Learner | Junior | Minimal | Gamer'
-avatar: '/assets/img/hero.jpg'
+avatar: '/assets/img/sky.png'
 
 # Search
 search: true
