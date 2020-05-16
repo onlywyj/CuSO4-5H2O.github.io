@@ -1,9 +1,10 @@
 ---
 layout: post
 title: MathJax Test
-date: 2017-07-30
+date: 2020-07-30
 categories: test
-tags: mathjax 
+tags: mathjax
+postPatterns: 'glamorous' 
 ---
 
 mathjax in markdown :)
