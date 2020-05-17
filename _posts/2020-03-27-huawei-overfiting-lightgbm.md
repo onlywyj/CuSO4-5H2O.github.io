@@ -6,7 +6,7 @@ author: Only
 tags: 过拟合 LightGBM 机器学习
 ---
 
-> 参加"华为网络人工智能黑客松大赛-硬盘异常检测"遇到的问题和一些尝试。
+> 参加"华为网络人工智能黑客松大赛-硬盘异常检测"遇到的问题和一些尝试
 
 ### 过拟合（Over-Fitting）
 
@@ -76,3 +76,4 @@ tags: 过拟合 LightGBM 机器学习
 ### 参考资料
 
 * [LightGBM官方文档](https://lightgbm.readthedocs.io/en/latest/)
+

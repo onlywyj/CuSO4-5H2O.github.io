@@ -16,3 +16,4 @@ tags: Git .gitignore
 * `$ git rm -r --cached .` 将所有本地缓存删除，将所有文件变为未track状态
 * `$ git add .` 添加所有文件
 * `$ git commit -m 'update .gitignore'` 重新提交
+
