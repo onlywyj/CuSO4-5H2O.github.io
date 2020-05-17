@@ -1,13 +1,12 @@
 ---
 layout: post
-title: '华为黑客松大赛-机器学习中的过拟合和玄学调参'
+title: '机器学习中的过拟合和玄学调参'
 date: 2020-03-27
 author: Only
-tags: 过拟合 调参 LightGBM 机器学习
+tags: 过拟合 LightGBM 机器学习
 ---
 
-> 参加“华为网络人工智能黑客松大赛-硬盘异常检测”遇到的问题和一些尝试
-
+> 参加"华为网络人工智能黑客松大赛-硬盘异常检测"遇到的问题和一些尝试。
 
 ### 过拟合（Over-Fitting）
 
@@ -17,7 +16,7 @@ tags: 过拟合 调参 LightGBM 机器学习
 
 <img src="http://onlywyj.gitee.io/image_bed/blog/2020-03-27-01.png" alt="01"  />
 
-* 如上图，在我们黑客松的比赛中，算法运行后“validation set fdr score:”的得分会比“test set fdr score:”的高。但是两者如果相差不大的话，拟合就是适度的，不必过度担心。
+* 如上图，在我们黑客松的比赛中，算法运行后`validation set fdr score:`的得分会比`test set fdr score:`的高。但是两者如果相差不大的话，拟合就是适度的，不必过度担心。
 * 值得注意的是：**过拟合是几乎无法被消除的，只可以对其抑制。**
 
 #### 过拟合产生常见的原因
@@ -41,16 +40,16 @@ tags: 过拟合 调参 LightGBM 机器学习
 
 <img src="http://onlywyj.gitee.io/image_bed/blog/2020-03-27-02.png" alt="02" style="zoom: 67%;" />
 
-* 使用较小的 max_bin
-* 使用较小的 num_leaves
-* 使用 min_data_in_leaf 和 min_sum_hessian_in_leaf
-* 通过设置 bagging_fraction 和 bagging_freq 来使用 bagging
-* 通过设置 feature_fraction 
-* 使用 lambda_l1, lambda_l2 和 min_gain_to_split 来使用正则
-* 尝试 max_depth 来避免生成过深的树
-* 尝试 extra_trees
+* 使用较小的 `max_bin`
+* 使用较小的 `num_leaves`
+* 使用 `min_data_in_leaf 和 min_sum_hessian_in_leaf`
+* 通过设置 `bagging_fraction` 和 `bagging_freq` 来使用 bagging
+* 通过设置 `feature_fraction `
+* 使用`lambda_l1`, `lambda_l2` 和 `min_gain_to_split` 来使用正则
+* 尝试 `max_depth` 来避免生成过深的树
+* 尝试 `extra_trees`
 
-经过测试发现，使用feature_fraction时效果达到了最好，虽然不多
+经过测试发现，使用`feature_fraction`时效果达到了最好，虽然不多
 
 ![03](http://onlywyj.gitee.io/image_bed/blog/2020-03-27-03.png)
 
@@ -62,7 +61,7 @@ tags: 过拟合 调参 LightGBM 机器学习
 
 <img src="http://onlywyj.gitee.io/image_bed/blog/2020-03-27-05.png" alt="05" style="zoom:80%;" />
 
-好吧，其实是使用boosting_type='dart'后出现的这种情况，Dropout参数设置的有点高，就一点点~
+好吧，其实是使用`boosting_type='dart'`后出现的这种情况，Dropout参数设置的有点高，就一点点~
 
 <img src="http://onlywyj.gitee.io/image_bed/blog/2020-03-27-06.png" alt="06" style="zoom: 50%;" />
 
