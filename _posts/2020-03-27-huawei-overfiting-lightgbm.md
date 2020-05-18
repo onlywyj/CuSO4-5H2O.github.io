@@ -67,7 +67,7 @@ tags: 过拟合 LightGBM 机器学习
 
 ### 各种深度学习架构，模型和技巧的集合
 
-* 在查资料的时候无意中发现的：https://github.com/rasbt/deeplearning-models
+* 在查资料的时候无意中发现的： <https://github.com/rasbt/deeplearning-models>
 
 ### 神经网络游乐场
 
