@@ -10,7 +10,7 @@ tags: Git
 
 ### 起因
 
-Git Bash打开的默认工作目录一般为`C:/Users/user`，而我们的本地Git仓库一般都不在这个位置，每次打开的时候都需要使用cd命令更换到Git仓库位置，很麻烦
+Git Bash打开的默认工作目录一般为`C:/Users/user`，而我们的本地Git仓库一般都不在这个位置，每次打开的时候都需要使用cd命令更换到Git仓库位置，很麻烦。
 
 ### 过程
 
@@ -22,6 +22,7 @@ Git Bash打开的默认工作目录一般为`C:/Users/user`，而我们的本地
 
 	<img src="http://onlywyj.gitee.io/image_bed/blog/2020-02-26-02.png" alt="02" style="zoom: 50%;" />
 
+* 点击“确定”，双击修改后的快捷方式，可以看到已经自动切换到目标目录了。
 
-
+	<img src="http://onlywyj.gitee.io/image_bed/blog/2020-02-26-03.png" alt="03" style="zoom:80%;" />
 
