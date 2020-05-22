@@ -21,11 +21,13 @@ $ git remote -v
 github  git@github.com:onlywyj/onlywyj.github.io.git (fetch)
 github  git@github.com:onlywyj/onlywyj.github.io.git (push)
 ```
+
 然后使用`git remote add <name> <url>`的方式添加新的远程仓库，如下：
 
 ```bash
 git remote add gitee gitee git@gitee.com:onlywyj/onlywyj.gitee.io.git
 ```
+
 再次查看：
 
 ```bash
@@ -35,7 +37,9 @@ gitee   git@gitee.com:onlywyj/onlywyj.gitee.io.git (push)
 github  git@github.com:onlywyj/onlywyj.github.io.git (fetch)
 github  git@github.com:onlywyj/onlywyj.github.io.git (push)
 ```
+
 此种方法**push**和**pull**需要分别指定远程仓库：
+
 ```bash
 $ git push github master
 $ git push gitee master
@@ -65,3 +69,4 @@ github  git@gitee.com:onlywyj/onlywyj.gitee.io.git (push)
 ### 结语
 
 两种方法各有优劣，实际使用中选择适合自己的。
+
